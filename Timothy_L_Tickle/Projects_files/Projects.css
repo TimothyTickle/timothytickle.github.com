@@ -1,5 +1,5 @@
 .paragraph_style {
-    color: rgb(0, 0, 0);
+    color: rgb(42, 42, 42);
     font-family: 'Times-Bold', 'Times', 'Times New Roman', serif;
     font-size: 14px;
     font-stretch: normal;
@@ -31,6 +31,28 @@
     opacity: 1.00;
 }
 .paragraph_style_1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Times-Bold', 'Times', 'Times New Roman', serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.paragraph_style_2 {
     color: rgb(62, 62, 62);
     font-family: 'Times-Roman', 'Times', 'Times New Roman', serif;
     font-size: 14px;
@@ -52,9 +74,53 @@
     text-indent: 0px;
     text-transform: none;
 }
+.paragraph_style_3 {
+    color: rgb(169, 169, 169);
+    font-family: 'HelveticaNeue-Bold', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
 .style_SkipStroke {
     background: transparent;
     opacity: 1.00;
+}
+.Body {
+    color: rgb(169, 169, 169);
+    font-family: 'HelveticaNeue-Bold', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
 }
 .Free_Form {
     color: rgb(169, 169, 169);
@@ -78,11 +144,14 @@
     text-indent: 0px;
     text-transform: none;
 }
-.graphic_textbox_layout_style_default_External_681_1204 {
-    position: relative;
-}
 .graphic_textbox_layout_style_default {
     padding: 4px;
+}
+.graphic_textbox_layout_style_default_External_681_1330 {
+    position: relative;
+}
+.graphic_textbox_layout_style_default_External_686_32 {
+    position: relative;
 }
 .graphic_textbox_style_default_SkipStroke {
     background: transparent;
