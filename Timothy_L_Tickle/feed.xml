@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  <id>urn:iweb:1EA1A7ED-A87C-4DD6-9D3B-2D61A283525B</id>
  <title>Page list Atom feed</title>
- <updated>2013-09-29T15:57:18-04:00</updated>
+ <updated>2013-09-29T16:16:01-04:00</updated>
  <link rel="self" href="feed.xml"/>
  <generator>iWeb</generator>
  <author>
@@ -14,7 +14,7 @@
   <title xmlns="urn:iweb:">Home</title>
   <in-navbar xmlns="urn:iweb:">E0A9F13F-6EAD-4588-963B-6E3E9A4E59BF</in-navbar>
   <link rel="alternate" href="Home.html"/>
-  <updated>2013-09-29T15:57:18.001-04:00</updated>
+  <updated>2013-09-29T16:16:01.001-04:00</updated>
   <content>Home</content>
  </entry>
  <entry>
@@ -23,7 +23,7 @@
   <title xmlns="urn:iweb:">Experience</title>
   <in-navbar xmlns="urn:iweb:">63AAD3C5-E283-426B-9605-3C15123D9B29</in-navbar>
   <link rel="alternate" href="Experience.html"/>
-  <updated>2013-09-29T15:57:18.002-04:00</updated>
+  <updated>2013-09-29T16:16:01.002-04:00</updated>
   <content>Experience</content>
  </entry>
  <entry>
@@ -32,7 +32,7 @@
   <title xmlns="urn:iweb:">Education</title>
   <in-navbar xmlns="urn:iweb:">DDB5A197-BCFC-47ED-BC5B-0100FF267099</in-navbar>
   <link rel="alternate" href="Education.html"/>
-  <updated>2013-09-29T15:57:18.003-04:00</updated>
+  <updated>2013-09-29T16:16:01.003-04:00</updated>
   <content>Education</content>
  </entry>
  <entry>
@@ -41,7 +41,7 @@
   <title xmlns="urn:iweb:">Projects</title>
   <in-navbar xmlns="urn:iweb:">4A918467-75BE-4FB4-A7E4-499B0688E656</in-navbar>
   <link rel="alternate" href="Projects.html"/>
-  <updated>2013-09-29T15:57:18.004-04:00</updated>
+  <updated>2013-09-29T16:16:01.004-04:00</updated>
   <content>Projects</content>
  </entry>
  <entry>
@@ -50,7 +50,7 @@
   <title xmlns="urn:iweb:">Publications</title>
   <in-navbar xmlns="urn:iweb:">C731CE42-6E1B-4742-80DC-7A56B563C3DE</in-navbar>
   <link rel="alternate" href="Publications.html"/>
-  <updated>2013-09-29T15:57:18.005-04:00</updated>
+  <updated>2013-09-29T16:16:01.005-04:00</updated>
   <content>Publications</content>
  </entry>
  <entry>
@@ -59,7 +59,7 @@
   <title xmlns="urn:iweb:">Invited Talks and Awards</title>
   <in-navbar xmlns="urn:iweb:">AD1A1C8A-DF22-49BB-9201-B729E0F9F107</in-navbar>
   <link rel="alternate" href="Invited_Talks_and_Awards.html"/>
-  <updated>2013-09-29T15:57:18.006-04:00</updated>
+  <updated>2013-09-29T16:16:01.006-04:00</updated>
   <content>Invited Talks and Awards</content>
  </entry>
 </feed>
