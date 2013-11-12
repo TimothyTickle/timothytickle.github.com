@@ -208,6 +208,12 @@ html, body {
   color: #0099ff;
 }
 
+.award_link a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #0099ff;
+}
+
 .award_location {
   font-weight: bold;
 }
