@@ -1,0 +1,228 @@
+/* General */
+
+html, body {
+  margin: 0;
+  width: 800px;
+}
+
+#all {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header Area */
+#name {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-size: xx-large;
+}
+
+#title {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#header {
+  width: 100%;
+  background-color: grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+#header_text_group {
+  width:40%;
+  float: left;
+}
+
+#hdr_text p {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+#email {
+  color: white;
+}
+
+#header_widgets {
+  padding-top: 1%;
+  padding-right: 10px;
+  width: 55%;
+  float: right;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+#header hr {
+  border-top: 1px dashed;
+}
+
+#nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  border-width: 1px 0;
+  text-align: center;
+}
+
+#nav_bar a{
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #0099ff;
+  font-weight: bold;
+}
+
+#nav_bar a:hover {
+  color: grey;
+}
+
+#nav_bar li{
+  display:inline;
+}
+
+#navigation {
+  width: 100%;
+}
+
+
+/* Summary Area */
+
+#main {
+  width: 100%;
+}
+
+#main hr {
+  border-top: 1px dashed;
+}
+
+#profile_img {
+  width: 25%;
+  height: auto;
+  float: left
+  padding: 5%;
+}
+
+#summary_text {
+  width: 70%;
+  height: auto;
+  float: right;
+  padding-top: 10px;
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+  display: inline;
+  margin-right: 5px;
+  float: left;
+}
+
+#summary_text p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Detail */
+#detail {
+  width: 100%;
+}
+
+
+/* Footer Area */
+
+#footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: small;
+}
+
+#footer hr {
+  border-top: medium double;
+}
+
+/* Sections */
+.section_header {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.education_text p {
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.project_header {
+  padding-left: 10px;
+}
+
+.project_header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+
+.project_text {
+  padding-left: 10px;
+}
+
+.project_skills {
+  padding-left: 10px;
+}
+
+.project_link a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #0099ff;
+}
+
+.publication_name {
+  font-weight: bold;
+}
+
+.publication_text {
+  padding-left: 10px;
+}
+
+.publication_link {
+  padding: 0px;
+  margin: 0px;
+}
+
+.publication_link a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #0099ff;
+}
+
+.award_location {
+  font-weight: bold;
+}
+
+.award_text {
+  padding-left: 10px;
+}
+
+.award_year {
+  padding-left: 10px;
+  font-weight: bold;
+  color: grey;
+}
+
+.education_year {
+  font-weight: bold;
+  color: grey;
+}
