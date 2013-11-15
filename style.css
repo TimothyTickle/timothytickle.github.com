@@ -3,6 +3,8 @@
 html, body {
   margin: 0;
   width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #all {
@@ -15,6 +17,10 @@ html, body {
   border-top-right-radius: 10px;
   margin: 0px;
   padding: 0px;
+}
+
+#all p {
+  font-family:"Arial", "Verdana", sans-serif;
 }
 
 /* Header Area */
@@ -47,8 +53,9 @@ html, body {
 }
 
 #hdr_text p {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
+  padding-bottom: 10px;
   color: white;
 }
 
@@ -75,6 +82,7 @@ html, body {
   padding: 0px;
   border-width: 1px 0;
   text-align: center;
+  font-family:"Arial", "Verdana", sans-serif;
 }
 
 #nav_bar a{
@@ -227,7 +235,26 @@ html, body {
   color: grey;
 }
 
+.education_detail {
+  float: left;
+}
+
+.education_text {
+  width: 100%;
+  float: left;
+}
+
 .education_year {
   font-weight: bold;
   color: grey;
+}
+
+.education_crest {
+  float: right;
+  width: 30%;
+}
+
+.education_crest img {
+  width: 25%;
+  height: auto;
 }
