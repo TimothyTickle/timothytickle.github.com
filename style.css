@@ -1,10 +1,11 @@
 /* General */
 
-html, body {
+html, body, iframe {
   margin: 0;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 #all {
@@ -257,4 +258,11 @@ html, body {
 .education_crest img {
   width: 25%;
   height: auto;
+}
+
+.pdf_display {
+  width:750px;
+  height:950px;
+  margin-left: auto;
+  margin-right: auto;
 }
