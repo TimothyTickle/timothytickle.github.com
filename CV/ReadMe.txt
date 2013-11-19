@@ -6,9 +6,18 @@ bibtex Art
 latex TimothyTickleCVLong
 dvipdf TimothyTickleCVLong
 
+
 latex TimothyTickleCV
 bibtex Conf
 bibtex Abstract
 bibtex Art
 latex TimothyTickleCV
 dvipdf TimothyTickleCV
+
+
+latex TimothyTickleCS
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyTickleCS
+dvipdf TimothyTickleCS
