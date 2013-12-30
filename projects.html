@@ -40,32 +40,48 @@
     <div id="main">
       <hr />
       <p class="section_header">Projects<span class="style"><br /></span></p>
+    </div>
+    <div>
       <p class="project_header"><a title="https://bitbucket.org/timothyltickle/biobakery" href="https://bitbucket.org/timothyltickle/biobakery">BioBakery</a></p>
       <p class="project_text">To make analysis tools available in an easy to access and standard environment, this project focuses on the creation of virtual machine images for metagenomics analysis.</p>
       <p class="project_skills">This project uses Amazon Cloud services, virtual machines, images, deb packaging, and bash scripting.</p>
       <p class="project_link"><a title="https://bitbucket.org/timothyltickle/biobakery" href="https://bitbucket.org/timothyltickle/biobakery">https://bitbucket.org/timothyltickle/biobakery</a><br><br></p>
+    </div>
+    <div>
       <p class="project_header"><a title="https://bitbucket.org/timothyltickle/breadcrumbs" href="https://bitbucket.org/timothyltickle/breadcrumbs">BreadCrumbs</a></p>
       <p class="project_text">An unofficial library of scripts and code used to manipulate metagenomic data. BreadCrumbs contains functionality to manipulate OTU / PCL / BIOM files and visualize relative and count based measurements.</p>
       <p class="project_skills">This is a python project using PyCogent, SciPy, NumPy, and matplotlib.</p>
       <p class="project_link"><a title="https://bitbucket.org/timothyltickle/breadcrumbs" href="https://bitbucket.org/timothyltickle/breadcrumbs">https://bitbucket.org/timothyltickle/breadcrumbs</a><br><br></p>
+    </div>
+    <div id="visualization"></div>
+    <div>
       <p class="project_header"><a title="https://bitbucket.org/chuttenh/maaslin" href="https://bitbucket.org/chuttenh/maaslin">MaAsLin</a></p>
       <p class="project_text">Microbial communities are emerging as a component of human health and potentially disease states. The Human Microbiome Project has performed an initial high-throughput survey on multiple biogeographical locations describing often rich ecosystems of varied compositional structure. Initial associations between these microbial communities and disease states have pointed towards potential links between microbial communities and Inflammatory Bowel Disease, rheumatoid arthritis, type II diabetes, and cardiovascular disease. Further exploration between microbiomes and diseases are warranted but present challenges in inference. High-throughput metagenomic data sets are often sparse, high-dimensional data sets of proportionate measurements requiring methods beyond traditional inference models. In this project we explore an optimal combination of established methodology to perform associations with high-throughput microbial community measurements and study metadata.</p>
       <p class="project_skills">This is an R project covering inference in sparse, high-dimensional data; gradient boosting; general linear models; LASSO; and zero-inflated models.</p>
       <p class="project_link"><a title="https://bitbucket.org/chuttenh/maaslin" href="https://bitbucket.org/chuttenh/maaslin">https://bitbucket.org/chuttenh/maaslin</a><br><br></p>
+    <div>
+    </div>
       <p class="project_header"><a title="https://bitbucket.org/timothyltickle/micropita" href="https://bitbucket.org/timothyltickle/micropita">microPITA</a></p>
       <p class="project_text">A computational tool enabling sample selection in two-stage (tiered) next-generation sequencing studies. Using two-stage designs can more efficiently allocate resources, reducing study costs, and maximizing the use of samples. From a survey study, selection of samples can be performed to target various microbial communities including: samples with the most diverse community (maximum diversity); samples dominated by specific microbes (targeted feature); samples with microbial communities representative of the survey (representative dissimilarity); samples with the most extreme microbial communities in the survey (most dissimilar); samples at the border of phenotype groups (discriminant) or samples typical of each phenotype (distinct).</p>
       <p class="project_skills">This is a python project using alpha and beta ecological diversity metrics, hierarchical clustering, K-medoids, margin maximizing methods, SciPy, NumPy, PyCogent, and matplotlib.</p>
       <p class="project_link"><a title="https://bitbucket.org/timothyltickle/micropita" href="https://bitbucket.org/timothyltickle/micropita">https://bitbucket.org/timothyltickle/micropita</a><br><br></p>
+    <div>
+    </div>
       <p class="project_header"><a title="https://bitbucket.org/timothyltickle/sparsedossa" href="https://bitbucket.org/timothyltickle/sparsedossa">sparseDOSSA</a></p>
       <p class="project_text">Microbial communities sampled from an environment have been observed to have several characteristics including: consistent structure within an environment, sparse sampling, and high-dimensionality. Additionally, confounding is an important characteristic of metagenomic studies; as living ecosystems, microbial community signal can be confounded by stimuli from their environment including pH, luminosity, temperature, host diet, host antibiotics use, and sample preparation. This methodology allows for the consistent generation of microbial abundances to be used as a common benchmark for metagenomic algorithms. These communities are similar to biologically generated communities but contain known truths including percent outliers to describe algorithmic robustness; associations with metadata allowing knowledge of true signal for association and prediction; and true covariance structure enabling the study of microbial member covariance and compositionality. With these synthetic communities, algorithmic development can be rigorously benchmarked and compared, allowing, for example the measurement of true and false positive rates.</p>
       <p class="project_skills">This is an R project involving zero-inflated models, log-normal distributions, multinomial sampling, and custom methodology.</p>
     </div>
-
     <div id="footer">
       <hr />
       <p>Copyright &copy; Timothy L Tickle 2013. All rights reserved. Designed by Timothy L Tickle.</p>
     </div>
   </div>
+    <script type="text/javascript" src="src/js/d3.js"></script>
+    <script type="text/javascript" src="src/js/CodeFlower.js"></script>
+    <script type="text/javascript">
+        var myFlower = new CodeFlower("#visualization", 300, 200);
+        myflower.update("data/codeflowers/breadcrumbs.json")
+    </script>
   </body>
 
 </html>
