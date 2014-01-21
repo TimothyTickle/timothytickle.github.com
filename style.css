@@ -146,7 +146,9 @@ html, body, iframe {
 
 /* Detail */
 #detail {
-  width: 100%;
+  width: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -204,6 +206,7 @@ html, body, iframe {
 
 .publication_text {
   padding-left: 10px;
+  padding-right: 10px
 }
 
 .publication_link {
@@ -228,6 +231,7 @@ html, body, iframe {
 
 .award_text {
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .award_year {
@@ -237,12 +241,14 @@ html, body, iframe {
 }
 
 .education_detail {
+  width: 75%;
   float: left;
 }
 
 .education_text {
-  width: 100%;
-  float: left;
+  width: 95%;
+  float: center;
+  margin: 10px; 
 }
 
 .education_year {
@@ -252,11 +258,12 @@ html, body, iframe {
 
 .education_crest {
   float: right;
-  width: 30%;
+  padding: 10px;
+  width: 15%;
 }
 
 .education_crest img {
-  width: 25%;
+  width: 50px;
   height: auto;
 }
 
