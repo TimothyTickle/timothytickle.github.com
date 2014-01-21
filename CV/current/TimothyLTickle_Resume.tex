@@ -1,0 +1,250 @@
+\documentclass[12pt]{report}
+\usepackage{multirow}%Allows you to span multiple rows
+\usepackage{fullpage}%Sets pages to 1in margins
+\usepackage[resetlabels]{multibib}%Allows multiple bibliographies
+\usepackage[margin=1.0in]{geometry}%Allows setting space
+\usepackage{setspace}%To create custome spacing in a setspacing environment
+\usepackage{fancyhdr}%To add in custom headers and footers
+\usepackage{lastpage}%To add in custom page numbers the variable \LastPage
+\usepackage[dvipdfm]{hyperref}%To add hrefs
+
+%Set margins to 1 inch all around
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \itemindent-\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+%Control page layout
+\setlength{\topmargin}{-5.0mm}%Gap above header
+\setlength{\topskip}{0.0mm}%Gap between header and text
+
+%Control paragraphs
+\setlength{\parindent}{0.0mm}%Indention of paragraphs
+\setlength{\parskip}{-5.0mm}%Gap between paragraphs
+
+%Control Floats
+\setlength{\floatsep}{0.0mm}
+\setlength{\textfloatsep}{0.0mm}
+\setlength{\intextsep}{2.0mm}
+\setlength{\abovecaptionskip}{0.0mm}
+\setlength{\belowcaptionskip}{0.0mm}
+
+%Control lists
+\addtolength{\topsep}{0.0mm}%Space between first item and preceding paragraph
+\addtolength{\partopsep}{0.0mm}%Extra space added to \topsep when environment starts a new paragraph
+\addtolength{\itemsep}{0.0mm}%space between list items
+
+%Remove hypenating words
+\hyphenpenalty=5000
+\tolerance=1000
+
+%Make sections not numbered and formatted
+\newcommand{\header}{\section*}
+%Make itemized more compact
+\newenvironment{detailsList}
+{\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\partopsep}{0pt}
+  \setlength{\topsep}{0pt}}
+{\end{itemize}}
+
+%%%Global Variables
+\def\yearColumnLength{1.0in}
+\def\detailColumnLength{5.5in}
+\def\fullLength{6.5in}
+
+%Multiple bibliographies
+\newcites{Conf,Abstract,Art}{{\Large Selected Peer Reviewed Publications:},{\Large Conference Posters and Abstracts:},{\Large Literary Works:}}
+
+\renewcommand{\headrulewidth}{0.0pt}%Do not let fancyhdr add a header line
+\renewcommand{\footrulewidth}{0.0pt}%Do not let fancyhdr add a footer line
+
+%Add footer
+\cfoot{Timothy Tickle \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Huge Timothy L. Tickle, Ph.D.}\hfill 1-704-777-4245\\
+HTTP://TIMOTHYLTICKLE.BITBUCKET.ORG \hfill TIMOTHYLTICKLE@GMAIL.COM\\\hline\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Education
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Education:}\\
+Harvard School of Public Health (Department of Biostatistics)\hfill Boston, MA\\
+Postdoctoral Fellow (Curtis Huttenhower Lab)\hfill September 2011-Present\\
+\\
+University of North Carolina at Charlotte\hfill Charlotte, NC\\
+Doctor of Philosophy in Bioinformatics and Computational Biology\hfill May 2011\\
+Bachelor of Science, Major: Computer Science (Cum laude)\hfill August 2004\\
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Professional Interests:}\\
+Interested in both development and implementation of analysis infrastructure and software systems. Experienced in applying high-dimensional and big data to complex diseases.
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Experience
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Experience:}\\
+\textbf{Postdoctoral Fellow}\hfill Fall 2011-Present\\
+Harvard University (Department of Biostatistics, Curtis Huttenhower Lab)\hfill Boston, MA\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Responsible for the development and validation of methodology and software for translating high-dimensional metagenomics studies to human diseases.
+\item Assist in and lead clinical data analysis currently including remapping the Human Microbiome Project (comprised of several terabytes of complex data).
+\item Responsible for adhering to software development practices including versioning, regression/unit testing, lab coding standards, and code reviews.
+\item Provide documentation, establish a web presence, and support software users.
+\item Write scientific reports and create custom visualizations.
+\item Mentor students, lab members, and visiting scientists on analysis and tool use.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-12.0mm}
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{Research Assistant}\hfill Fall 2007-2011\\
+College of Computing and Informatics (UNC-Charlotte)\hfill Charlotte, NC\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Was responsible for all work associated with the ovarian exon tumor transcriptome study. Solely performed all wet-lab protocols and dry-lab analysis.
+\item Performed analysis and developed software and database solutions.
+%\item Participated in training other team members and interns in various wet lab protocols.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-10.0mm}
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{Teaching Assistant}\hfill Fall 2004-Fall 2007\\
+College of Computing and Informatics (UNC-Charlotte)\hfill Charlotte, NC\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Courses included Intro to Bioinformatics, Programming for Biologists, Computer~Logic~\&~Design, Computer	~Organization~\&~Architecture
+\item Taught classes on programming and CAD-based circuitry design software.
+%\item Held lab sessions, office hours, and weekly programming tutoring sessions.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{Application Developer}\hfill Fall 2003-2004\\
+The Vanguard Group\hfill Charlotte, NC\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Developed netcentric services (web applications) from design documents.
+\item Participated in code reviews, presentations, unit testing, performance testing, client acceptance testing and troubleshooting.
+\item Lead a focus group on the creation and maintenance of automated regression suites.
+\item Was solely responsible for migrating site emailing services to a new in-house service.
+\item Coordinated and tested web service environment settings with database administrators.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-10.0mm}
+
+%Honors and Awards
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Honors, Awards, and Assistantships:}\\
+International Society for Computational Biology Travel Fellowship\hfill 2012-2013\\
+GAANN Scholars Fellowship\hfill 2009-2011\\
+TA of the year for the College of Computing and Informatics\hfill 2008\\
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Professional Societies
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Professional Societies:}\\
+The International Society for Computational Biology\hfill 2010-Present\\
+American Association of Cancer Researchers\hfill 2004-2007\\
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Technical Skills
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Computer Skills:}\\
+\textbf{Operating Systems: }Windows, Mac~OS, Linux~(Ubuntu)\\
+\textbf{Programming and Scripting Related: }C/C++/C\#, Java~(SE,~EE), JDBC,\\ 
+Java~2D~API, JSP, JUnit, XML, JSON, Python, NumPy, mlpy, matplotlib, PyUnit, PyCogent, Biopython, R\\
+\textbf{Bioinformatics Related: }16S~amplicon and whole~microbial~metagenomics analysis,\\
+BLAST, Bowtie2, metaPhlan, HUMAnN, LefSe, and other Huttenhower tools\\
+\textbf{Databases: }Oracle, Postgres, SQL\\
+\textbf{Other Applications: }Bitbucket / mercurial, Eclipse, Inkscape, \LaTeX, bib\TeX\\
+\textbf{Algorithms: }Support Vector Machines (SVMs), Gradient Boosting,\\
+Mulitvariate Regression, K-mediods, Multiple Factor Analysis, Principle Components Analysis (PCA), Principle Coordinates Anlysis (PCoA), Nonmetric Multidimensional Scaling (NMDS), Heirarchical Clustering\\
+\end{tabular}
+\end{table}
+
+\vspace{-14.0mm}
+%\clearpage
+
+%Full Manuscripts
+\section*{ }
+\begin{spacing}{0.9}
+\bibliographystyleConf{ieeetr}
+\nociteConf{2013_microPITA}
+\nociteConf{2013MSBReview}
+\nociteConf{2012_IBD_Paper}
+%\nociteConf{Dissertation}
+%\nociteConf{HOX_ERBB}
+\nociteConf{Null_PValue}
+\bibliographyConf{TimothyTickle}
+\end{spacing}
+
+\end{document}

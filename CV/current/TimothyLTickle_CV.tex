@@ -1,0 +1,322 @@
+\documentclass[12pt]{report}
+\usepackage{multirow}%Allows you to span multiple rows
+\usepackage{fullpage}%Sets pages to 1in margins
+\usepackage[resetlabels]{multibib}%Allows multiple bibliographies
+\usepackage[margin=1.0in]{geometry}%Allows setting space
+\usepackage{setspace}%To create custome spacing in a setspacing environment
+\usepackage{fancyhdr}%To add in custom headers and footers
+\usepackage{lastpage}%To add in custom page numbers the variable \LastPage
+\usepackage[dvipdfm]{hyperref}%To add hrefs
+
+%Set margins to 1 inch all around
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \itemindent-\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+%Control page layout
+\setlength{\topmargin}{-5.0mm}%Gap above header
+\setlength{\topskip}{0.0mm}%Gap between header and text
+
+%Control paragraphs
+\setlength{\parindent}{0.0mm}%Indention of paragraphs
+\setlength{\parskip}{-5.0mm}%Gap between paragraphs
+
+%Control Floats
+\setlength{\floatsep}{0.0mm}
+\setlength{\textfloatsep}{0.0mm}
+\setlength{\intextsep}{2.0mm}
+\setlength{\abovecaptionskip}{0.0mm}
+\setlength{\belowcaptionskip}{0.0mm}
+
+%Control lists
+\addtolength{\topsep}{0.0mm}%Space between first item and preceding paragraph
+\addtolength{\partopsep}{0.0mm}%Extra space added to \topsep when environment starts a new paragraph
+\addtolength{\itemsep}{0.0mm}%space between list items
+
+%Remove hypenating words
+\hyphenpenalty=5000
+\tolerance=1000
+
+%Make sections not numbered and formatted
+\newcommand{\header}{\section*}
+%Make itemized more compact
+\newenvironment{detailsList}
+{\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\partopsep}{0pt}
+  \setlength{\topsep}{0pt}}
+{\end{itemize}}
+
+%%%Global Variables
+\def\yearColumnLength{1.0in}
+\def\detailColumnLength{5.5in}
+\def\fullLength{6.5in}
+
+%Multiple bibliographies
+\newcites{Conf,Abstract,Art}{{\Large Peer Reviewed Publications:},{\Large Conference Posters and Abstracts:},{\Large Literary Works:}}
+
+\renewcommand{\headrulewidth}{0.0pt}%Do not let fancyhdr add a header line
+\renewcommand{\footrulewidth}{0.0pt}%Do not let fancyhdr add a footer line
+
+%Add footer
+\cfoot{Timothy Tickle \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Huge Timothy L. Tickle, Ph.D.}\hfill 1-704-777-4245\\
+http://TIMOTHYLTICKLE.BITBUCKET.ORG \hfill TIMOTHYLTICKLE@GMAIL.COM\\\hline\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Education
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Education:}\\
+Harvard School of Public Health (Department of Biostatistics)\hfill September 2011-Present\\
+Postdoctoral Fellow (Curtis Huttenhower Lab)\hfill Boston, MA\\
+\\
+University of North Carolina at Charlotte\hfill May 2011\\
+Doctor of Philosophy in Bioinformatics and Computational Biology\hfill Charlotte, NC\\
+Dissertation: ``Data Mining the Serous Ovarian Tumor Transcriptome''.\\
+Topic included: Ovarian Tumor Genetics, Biomarker Discovery, Transcript-level Analysis.\\
+\\
+University of North Carolina at Charlotte\hfill August 2004\\
+Bachelor of Science: Computer Science\hfill Charlotte, NC\\
+Research Project: Design of bioinformatics software for Ovarian Cancer Analysis.\\
+\\
+Wake Forest University\hfill May 1999\\
+Bachelor of Science: History, Education\hfill Winston-Salem, NC\\
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Research Interests:}\\
+Experienced in applying high-throughput technology to complex diseases. Interested in both designing and implementing analysis infrastructure and software systems for bioinformatics analysis. Focused on applying next-generation sequencing, and microarray chip technology  to basic and translational experimentation, explicitly when related to clinical studies.
+\end{tabular}
+\end{table}
+
+\vspace{-12.0mm}
+
+%Full Manuscripts
+\section*{ }
+\begin{spacing}{0.9}
+\bibliographystyleConf{ieeetr}
+\nociteConf{2013_microPITA}
+\nociteConf{2013MSBReview}
+\nociteConf{2012_IBD_Paper}
+\nociteConf{Dissertation}
+\nociteConf{HOX_ERBB}
+\nociteConf{Null_PValue}
+\bibliographyConf{TimothyTickle}
+\end{spacing}
+
+\clearpage
+
+%Research Experience
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Research Experience:}\\
+\textbf{Postdoctoral Fellow}\hfill Fall 2011-Present\\
+Department of Biostatistics (Harvard University, Curtis Huttenhower Lab)\hfill Boston, MA\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Responsible for the development and validation of methodology and software for translating metagenomics studies to human diseases.
+\item Assist in and lead clinical study analysis in microbial biomarker associations with genetic, environmental, and host phenotypes.
+\item Responsible for adhering to software development practices including versioning, regression/unit testing, lab coding standards, and code reviews.
+\item Provide documentation, establish a web presence, and support software users.
+\item Write scientific reports and create custom visualizations.
+\item Mentor students, lab members, and visiting scientists on analysis and tool use.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{Research Assistant}\hfill Fall 2007-2011\\
+College of Computing and Informatics (UNC-Charlotte)\hfill Charlotte, NC\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Was responsible for all work associated with the ovarian exon tumor transcriptome study. Solely performed all wet-lab protocols and dry-lab analysis.
+\item Developed and performed wet lab protocols including: sample preparation and storage; tissue staining; pathology evaluation; cryosectioning; laser capture microdissection; immunohistochemistry; RNA extraction, and isolation; and cDNA generation, amplification, and preparation for Affymetrix GeneChip Human Exon 1.0 ST Arrays.
+\item Participated in training other team members and interns in various wet lab protocols.
+\item Performed associated analysis and developed software and database solutions.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+%Academic Work experience
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{Instructor}\hfill Fall 2010\\
+Introduction to Bioinformatics (UNC-Charlotte)\hfill Charlotte, NC\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Acted as the instructor of record. Was solely responsible for designing and teaching the first undergraduate introductory bioinformatics class.
+\item Designed and delivered all lectures and associated presentations.
+\item Developed assessment activities including testing, review sessions, labs, and homework.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\vspace{-5.0mm}
+
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{Teaching Assistant}\hfill Fall 2004-Fall 2007\\
+College of Computing and Informatics (UNC-Charlotte)\hfill Charlotte, NC\\
+ITCS 3050 (Intro to Bioinformatics), ITCS 6160 (Programming for Biologists), ITCS 2181(Computer Logic \& Design), ITCS 3183 (Hardware Systems Design), ITCS 3181/5141 (Computer Organization \& Architecture) and ITCS 3650/3651 (Senior Projects).\\
+\vspace{-7.0mm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item Taught classes on programming and class related software.
+\item Held lab sessions, office hours, and weekly tutoring sessions.
+\end{itemize}
+\end{tabular}
+\end{table}
+
+\clearpage
+
+%Honors and Awards
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Honors, Awards, and Assistantships:}\\
+%Add in TA years
+International Society for Computational Biology Travel Fellowship\hfill 2012 and 2013\\
+GAANN Scholars Fellowship\hfill 2009-2011\\
+UNC-Charlotte Biotechnology Conference Finalist\hfill 2010\\
+TA of the year for the College of Computing and Informatics\hfill 2008\\
+Received the Essam El-Kwae award for student-faculty research\hfill 2005\\
+%Reward received for ``Ovarian Cancer Research Using Microarray Analysis''\\
+Graduated \emph{Cum Laude} from the University of North Carolina at Charlotte\hfill 2004\\
+Graduated \emph{Cum Laude} from Wake Forest University\hfill 1999\\
+\end{tabular}
+\end{table}
+
+%Presentations
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Invited Presentations (recent):}\\
+Microbial biomaker inference in metadata rich studies.\hfill November 2013\\
+(Genomics Retreat, Dana-Farber Cancer Institute)\\
+Metagenomic inference and biomarker discovery for the gut microbiome\hfill July 2013\\in inflammatory bowel disease.\\
+(International Conference on Intelligence Systems for Molecular Biology)\\
+Surveying 16S rRNA abundance to determine sample selection\hfill Feb 2012\\
+for follow-up studies.\\
+(Computational Genomics Group, Dana-Faber Cancer Institute)\\
+%CMC presentation
+Ovarian Serous Type I,II Tumor Data Set for Expression and\hfill Mar 2011\\
+Paracrine Signaling Investigation.\\
+(Carolinas Medical Center, Cannon Research Community)\\
+Data Mining the Ovarian Tumor Transcriptome.\hfill Feb 2011\\
+(UNC-Charlotte's Department of Bioinformatics and Genomics)\\
+Harnessing the Secrets of Life: How Bioinformatics is Changing Our World.\hfill Apr,~Mar 2010\\
+(Queens University and Wingate University)\\
+%Presented Multiple Presentations on Microarray Technology.\hfill May-Dec 2005\\
+%Automated Microarray Analysis\hfill Dec 2005\\
+%(UNC-Charlotte's Bioinformatics Research Group)\\
+%Introduction to Bioinformatics and Microarray Technology\hfill Nov 2005\\
+%(UNC-Charlotte's Computer Science Freshman Community)\\
+%Ovarian Cancer Microarray Analysis\hfill Nov 2005\\
+%(UNC-Charlotte's Computer Science Research Seminar)\\
+%Analysis of Ovarian Microarray Data\hfill Apr 2005\\
+%(UNC-Charlotte's Graduate Research Fair)\\
+%Bioinformatics: A Study of Ovarian Cancer.\hfill May 2004\\
+%(Carolina's Medical Center, Molecular Biology Core Facility)\\
+\end{tabular}
+\end{table}
+
+%Guest Lecturing
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Guest Lecturing:}\\
+Mentor Graphics Tutorial\hfill Sept 2010\\
+(Computer Systems Lab and Recitation; UNC-Charlotte)\hfill \\
+Microarray Technology\hfill Apr 2010\\
+(Bioinformatics; Davidson College)\hfill \\
+Unit Testing in Python\hfill Mar 2010\\
+(Bionformatics Progamming I; UNC-Charlotte)\hfill \\
+Mentor Graphics Tutorial\hfill Sept 2009\\
+(Computer Architecture/Hardware Design; UNC-Charlotte)\hfill \\
+Unit Testing in Python\hfill Nov 2009\\
+(Bioinformatics Programming I; UNC-Charlotte)\hfill \\
+\end{tabular}
+\end{table}
+
+%Data sets
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Public Data Sets Developed:}\\
+Serous ovarian benign tumor and type II carcinoma data set for expression and paracrine signaling investigation (GEO\#~GSE29156).
+\end{tabular}
+\end{table}
+
+%Professional Societies
+\begin{table}[!h]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Professional Societies:}\\
+The International Society for Computational Biology\hfill 2010-Present\\
+American Association of Cancer Researchers\hfill 2004-2007\\
+\end{tabular}
+\end{table}
+
+%Technical Skills
+\begin{table}[!ht]
+\begin{tabular}{p{\fullLength}}
+\textbf{\Large Computer Skills:}\\
+\textbf{Operating Systems: }Windows~(current), Mac~OS~(desktop~and~server), Linux~(Ubuntu)\\
+\textbf{Programming and Scripting Related: }C/C++/C\#, Java~(SE,~EE), JDBC,\\
+Java~2D~API, JSP, JUnit, XML, JSON, Python, NumPy, mlpy, matplotlib, PyUnit, PyCogent, Biopython, R\\
+\textbf{Bioinformatics Related: }16S~amplicon and whole~microbial~metagenomics analysis,\\ BLAST, Bowtie2, metaPhlan, HUMAnN, LefSe, and other Huttenhower tools\\
+\textbf{Databases: }Oracle, Postgres, SQL\\
+\textbf{Other Applications: }Bitbucket / mercurial, Eclipse, Inkscape, \LaTeX, bib\TeX\\
+\textbf{Algorithms: }Support Vector Machines (SVMs), Gradient Boosting,\\
+Mulitvariate Regression, K-mediods, Multiple Factor Analysis, Principle Components Analysis (PCA), Principle Coordinates Anlysis (PCoA), Nonmetric Multidimensional Scaling (NMDS), Heirarchical Clustering\\
+ \\
+\textbf{\Large Wet Lab Skills:}\\
+\textbf{Antibody Based: } Immunohistochemistry\\
+\textbf{Laser Capture Microdissection: }Manual (PixCell IIe) and Automated (ArcturusXT\textsuperscript{\texttrademark}); cut and capture, cryosectioning\\
+\textbf{General Molecular Biology Techniques: }Purification columns, affynity beads, RNA (extraction, isolation), cDNA (isolation, amplification), Nanodrop, Bioanalyzer\\
+\textbf{Human Study Specific: }Human tissue and fluid (serum) preparation for tissue bank, familiar with ovarian tumor pathology\\
+\textbf{Next Generation Sequencing:} cDNA library construction, emulsion PCR (emPCR)\\
+\textbf{Microarray Related: }ST-cDNA conversion, cDNA fragmentation and labeling, sample preparation for Affymetrix GeneChip Human Exon 1.0 ST Arrays using NuGEN products\\
+\textbf{Staining: }Hemotoxylin and eosin, HistoGene\\
+\end{tabular}
+\end{table}
+\end{document}

@@ -7,12 +7,12 @@ latex TimothyTickleCVLong
 dvipdf TimothyTickleCVLong
 
 
-latex TimothyTickleCV
+latex TimothyLTickle_CV
 bibtex Conf
 bibtex Abstract
 bibtex Art
-latex TimothyTickleCV
-dvipdf TimothyTickleCV
+latex TimothyLTickle_CV
+dvipdf TimothyLTickle_CV
 
 
 latex TimothyTickleCS
@@ -21,3 +21,10 @@ bibtex Abstract
 bibtex Art
 latex TimothyTickleCS
 dvipdf TimothyTickleCS
+
+latex TimothyLTickle_Resume
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyLTickle_Resume
+dvipdf TimothyLTickle_Resume
