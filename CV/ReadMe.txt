@@ -28,3 +28,10 @@ bibtex Abstract
 bibtex Art
 latex TimothyLTickle_Resume
 dvipdf TimothyLTickle_Resume
+
+latex TimothyLTickle_Novartis
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyLTickle_Novartis
+dvipdf TimothyLTickle_Novartis
