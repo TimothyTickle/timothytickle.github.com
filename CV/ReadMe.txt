@@ -35,3 +35,17 @@ bibtex Abstract
 bibtex Art
 latex TimothyLTickle_Novartis
 dvipdf TimothyLTickle_Novartis
+
+latex TimothyLTickle_NGPVan
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyLTickle_NGPVan
+dvipdf TimothyLTickle_NGPVan
+
+latex TimothyLTickle_Broad
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyLTickle_Broad
+dvipdf TimothyLTickle_Broad
