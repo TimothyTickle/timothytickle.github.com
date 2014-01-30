@@ -49,3 +49,10 @@ bibtex Abstract
 bibtex Art
 latex TimothyLTickle_Broad
 dvipdf TimothyLTickle_Broad
+
+latex TimothyLTickle_Indeed
+bibtex Conf
+bibtex Abstract
+bibtex Art
+latex TimothyLTickle_Indeed
+dvipdf TimothyLTickle_Indeed
